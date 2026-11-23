@@ -1,0 +1,10 @@
+Sonea, Flutter ve Rust ile geliştirilmiş çevrimdışı odaklı bir Android müzik çalardır.
+
+Özellikler:
+- Yerel kütüphane tarayıcısı (FLAC, OPUS, MP3, M4A, AAC, OGG, WAV, AIFF, WV), klasör tarayıcısı, kısa ses filtresi, klasör gizleme ve A-Z hızlı harf kaydırıcısı.
+- Boşluksuz (gapless) oynatma, 5 bant ekolayzır, ReplayGain (Şarkı/Albüm, ön-amfi ve bozulma önleme), oynatma hızı, sıra düzenleme ve uyku zamanlayıcısı.
+- Yerel .lrc dosyaları, gömülü etiketler veya paralel HTTPS aramasıyla zaman senkronize karaoke şarkı sözleri; enstrümantal parça algılama, elle arama/yapıştırma ve Japonca, Korece, Kiril, Yunanca ve Çince için çevrimdışı Rust transliterasyonu.
+- Akıllı listeler (Favoriler, Son Çalınanlar, En Çok Dinlenenler), 2x2 kapak kolajlı özel çalma listeleri, .m3u8/.pls/.xspf içe/dışa aktarma ve JSON yedekleme.
+- Sanzo Wada'nın A Dictionary of Color Combinations (1933-34) eserinden uyarlanmış 10 çift modlu (Aydınlık ve Karanlık) tema.
+- Aktif temayla uyumlu 5 Android ana ekran widget'ı (Cover Tile, Micro Pill, Quick Mix Dock, Studio Card, Up Next Desk).
+- Özgür ve açık kaynaklı (GPL-3.0); reklamsız, takipçisiz ve yalnızca HTTPS isteğe bağlı ağ çağrıları.

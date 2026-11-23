@@ -1,0 +1,5 @@
+İlk v1.0.0 sürümü:
+- Rust tabanlı yerel ses kütüphanesi tarayıcısı ve WAL modlu SQLite veritabanı
+- Boşluksuz oynatma, 5 bant ekolayzır, ReplayGain ve uyku zamanlayıcısı
+- Paralel 6 sağlayıcılı senkronize şarkı sözü motoru, enstrümantal algılama ve çevrimdışı Romaji/Hangul/Kiril transliterasyonu
+- 10 çift modlu Sanzo Wada teması ve temayla uyumlu 5 Android widget'ı

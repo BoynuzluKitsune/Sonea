@@ -1,0 +1,5 @@
+Initial v1.0.0 release:
+- Rust-powered local audio library indexer and SQLite WAL database
+- Gapless playback, 5-band equalizer, ReplayGain, and sleep timer
+- Parallel 6-provider synced-first karaoke lyrics, instrumental detection, and offline Romaji/Hangul/Cyrillic transliteration
+- 10 dual-mode Sanzo Wada themes and 5 theme-synced Android widgets

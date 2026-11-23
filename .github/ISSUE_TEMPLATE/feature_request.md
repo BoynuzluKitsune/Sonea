@@ -1,19 +1,16 @@
 ---
 name: Feature Request
-about: Suggest a thoughtful improvement or new capability for Sonea
+about: Suggest an improvement for Sonea
 title: "[Feature]: "
 labels: enhancement
 assignees: ''
 ---
 
-## Problem or Motivation
-What problem are you trying to solve, or what listening workflow feels missing?
+**What do you want to solve?**
+Describe the problem or missing workflow.
 
-## Proposed Solution
-Describe how you envision this feature working in Sonea (keeping Sonea's minimalist, offline-first design in mind).
+**Suggested behavior**
+How should it work?
 
-## Alternatives Considered
-Any alternative approaches or workarounds you have considered.
-
-## Additional Context
-Add mockups, references, or links if helpful.
+**Extra context**
+Add mockups or references if helpful.

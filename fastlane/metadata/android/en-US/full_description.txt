@@ -1,0 +1,10 @@
+Sonea is an offline-first Android music player built with Flutter and Rust.
+
+Features:
+- Local library scanner (FLAC, OPUS, MP3, M4A, AAC, OGG, WAV, AIFF, WV) with folder browsing, short-audio duration filter, folder exclusion list, and A-Z fast scroller.
+- Gapless playback, 5-band equalizer, ReplayGain (Track/Album with pre-amp and anti-clipping), playback speed control, queue reordering, and fade-out sleep timer.
+- Time-synced karaoke lyrics from local .lrc files, embedded tags, or parallel HTTPS lookup, plus instrumental track detection, manual search/paste, and offline Rust transliteration for Japanese, Korean, Cyrillic, Greek, and Chinese.
+- Smart playlists (Favorites, Recently Played, Most Played), custom playlists with 2x2 cover collages, .m3u8/.pls/.xspf import and export, and JSON backup/restore.
+- 10 dual-mode (Light and Dark) color themes adapted from Sanzo Wada's A Dictionary of Color Combinations (1933-34).
+- 5 theme-synced Android home screen widgets (Cover Tile, Micro Pill, Quick Mix Dock, Studio Card, Up Next Desk).
+- Free and open-source (GPL-3.0) with no ads, no analytics, and HTTPS-only optional network lookups.
