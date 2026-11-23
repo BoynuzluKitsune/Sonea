@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animated-vector xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:aapt="http://schemas.android.com/aapt">
+    <aapt:attr name="android:drawable">
+        <vector
+            android:width="18dp"
+            android:height="18dp"
+            android:viewportWidth="24"
+            android:viewportHeight="24">
+            <group
+                android:name="bar1"
+                android:pivotX="5.5"
+                android:pivotY="20">
+                <path
+                    android:fillColor="#FFFFFF"
+                    android:pathData="M4,5 L7,5 L7,20 L4,20 Z" />
+            </group>
+            <group
+                android:name="bar2"
+                android:pivotX="12"
+                android:pivotY="20">
+                <path
+                    android:fillColor="#FFFFFF"
+                    android:pathData="M10.5,4 L13.5,4 L13.5,20 L10.5,20 Z" />
+            </group>
+            <group
+                android:name="bar3"
+                android:pivotX="18.5"
+                android:pivotY="20">
+                <path
+                    android:fillColor="#FFFFFF"
+                    android:pathData="M17,6 L20,6 L20,20 L17,20 Z" />
+            </group>
+        </vector>
+    </aapt:attr>
+    <target android:name="bar1">
+        <aapt:attr name="android:animation">
+            <objectAnimator
+                android:duration="420"
+                android:interpolator="@android:interpolator/fast_out_slow_in"
+                android:propertyName="scaleY"
+                android:repeatCount="infinite"
+                android:repeatMode="reverse"
+                android:valueFrom="0.28"
+                android:valueTo="1.0"
+                android:valueType="floatType" />
+        </aapt:attr>
+    </target>
+    <target android:name="bar2">
+        <aapt:attr name="android:animation">
+            <objectAnimator
+                android:duration="360"
+                android:interpolator="@android:interpolator/fast_out_slow_in"
+                android:propertyName="scaleY"
+                android:repeatCount="infinite"
+                android:repeatMode="reverse"
+                android:startOffset="140"
+                android:valueFrom="0.35"
+                android:valueTo="1.0"
+                android:valueType="floatType" />
+        </aapt:attr>
+    </target>
+    <target android:name="bar3">
+        <aapt:attr name="android:animation">
+            <objectAnimator
+                android:duration="460"
+                android:interpolator="@android:interpolator/fast_out_slow_in"
+                android:propertyName="scaleY"
+                android:repeatCount="infinite"
+                android:repeatMode="reverse"
+                android:startOffset="260"
+                android:valueFrom="0.24"
+                android:valueTo="0.95"
+                android:valueType="floatType" />
+        </aapt:attr>
+    </target>
+</animated-vector>

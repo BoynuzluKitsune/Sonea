@@ -1,0 +1,8 @@
+include: package:flutter_lints/flutter.yaml
+
+analyzer:
+  exclude:
+    - _legacy/**
+    - build/**
+    - lib/src/rust/**
+    - android/**

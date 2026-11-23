@@ -1,0 +1,8 @@
+lib/src/rust/** linguist-generated=true
+rust/src/frb_generated.rs linguist-generated=true
+rust_builder/** linguist-vendored=true
+rust_builder/**/*.cmake linguist-vendored=true
+rust_builder/**/*.sh linguist-vendored=true
+rust_builder/**/*.rb linguist-vendored=true
+rust_builder/**/*.ps1 linguist-vendored=true
+test/** linguist-generated=true
