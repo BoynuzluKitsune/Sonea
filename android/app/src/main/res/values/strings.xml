@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Sonea</string>
+    <string name="widget_tap_to_play">Tap to play</string>
+    <string name="widget_shuffle_action">Karıştır</string>
+    <string name="widget_up_next_label">Up Next</string>
+    <string name="widget_queue_empty">Queue is empty</string>
+    <string name="widget_playlists_empty">Create a playlist in Sonea</string>
+    <string name="widget_cd_cover">Album cover</string>
+    <string name="widget_cd_prev">Previous track</string>
+    <string name="widget_cd_play_pause">Play or pause</string>
+    <string name="widget_cd_next">Next track</string>
+    <string name="widget_cd_shuffle">Toggle shuffle</string>
+    <string name="widget_desc_micro_pill">4x1 capsule bar with artwork, live playing wave, accent bar, and playback controls.</string>
+    <string name="widget_desc_studio_card">4x2 studio card with square cover, audio format badge, live playing wave, shuffle, and transport controls.</string>
+    <string name="widget_desc_cover_tile">2x2 artwork-first square tile with bottom controls and live playing indicator.</string>
+    <string name="widget_desc_up_next_desk">4x3 live queue desk with active track controls and next 3 tappable tracks.</string>
+    <string name="widget_desc_quick_mix_dock">4x2 quick dock with one-tap Shuffle card, Play/Pause, and 3 playlist shortcuts.</string>
+</resources>

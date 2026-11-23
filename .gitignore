@@ -1,0 +1,61 @@
+# Miscellaneous & OS
+*.class
+*.log
+*.pyc
+*.swp
+.DS_Store
+Thumbs.db
+.atom/
+.buildlog/
+.history
+.svn/
+migrate_working_dir/
+
+# Environment & Local Secrets
+.env
+.env.*
+*.pem
+*.p12
+
+# Flutter / Dart
+.dart_tool/
+.flutter-plugins
+.flutter-plugins-dependencies
+.pub/
+.pub-cache/
+.packages
+build/
+coverage/
+
+# IDE, Editor & Agent Temp Files
+*.iml
+*.ipr
+*.iws
+.idea/
+.vscode/
+.android/
+.agent/
+output.txt
+
+# Android Local Config, Gradle Cache & Signing Keys
+local.properties
+android/local.properties
+key.properties
+android/key.properties
+*.jks
+*.keystore
+android/.gradle/
+android/.kotlin/
+android/captures/
+android/app/debug/
+android/app/release/
+
+# Built Binaries & Release Artifacts
+*.apk
+*.aab
+*.ipa
+
+# Rust Build Artifacts
+rust/target/
+**/target/
+Cargo.lock

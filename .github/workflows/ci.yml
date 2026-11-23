@@ -1,0 +1,62 @@
+name: Sonea CI
+
+on:
+  push:
+    branches: [main, master]
+  pull_request:
+
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  rust:
+    name: Rust Tests & Clippy
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Setup Rust toolchain
+        uses: dtolnay/rust-toolchain@stable
+        with:
+          components: clippy
+
+      - name: Cache Cargo registry & build
+        uses: actions/cache@v4
+        with:
+          path: |
+            ~/.cargo/bin/
+            ~/.cargo/registry/index/
+            ~/.cargo/registry/cache/
+            ~/.cargo/git/db/
+            rust/target/
+          key: ${{ runner.os }}-cargo-${{ hashFiles('rust/Cargo.toml') }}
+
+      - name: Run Rust unit tests
+        run: cargo test --manifest-path rust/Cargo.toml --quiet
+
+      - name: Run Clippy (deny warnings)
+        run: cargo clippy --manifest-path rust/Cargo.toml --all-targets -- -D warnings
+
+  flutter:
+    name: Flutter Analyze & Tests
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Setup Flutter
+        uses: subosito/flutter-action@v2
+        with:
+          channel: stable
+          cache: true
+
+      - name: Install Dart dependencies
+        run: flutter pub get
+
+      - name: Static analysis
+        run: dart analyze lib test
+
+      - name: Run Flutter tests
+        run: flutter test --no-pub

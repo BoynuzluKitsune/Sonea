@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/sw_root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="4dp">
+
+    <ImageView
+        android:id="@+id/sw_bg"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:contentDescription="@null"
+        android:scaleType="fitXY"
+        android:src="@drawable/sonea_w_card_bg" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/sonea_w_ripple_rounded"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:padding="12dp">
+
+        <FrameLayout
+            android:layout_width="90dp"
+            android:layout_height="90dp">
+
+            <ImageView
+                android:id="@+id/sw_cover"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:contentDescription="@string/widget_cd_cover"
+                android:scaleType="centerCrop"
+                android:src="@drawable/sonea_w_placeholder" />
+
+            <TextView
+                android:id="@+id/sw_format_badge"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom|start"
+                android:layout_margin="5dp"
+                android:background="@drawable/sonea_w_badge_bg"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:paddingStart="5dp"
+                android:paddingTop="1.5dp"
+                android:paddingEnd="5dp"
+                android:paddingBottom="1.5dp"
+                android:text="FLAC"
+                android:textColor="#7DD3FC"
+                android:textSize="9sp"
+                android:textStyle="bold"
+                android:visibility="gone" />
+        </FrameLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:orientation="vertical"
+            android:paddingStart="12dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/sw_title"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:ellipsize="end"
+                    android:maxLines="1"
+                    android:text="@string/app_name"
+                    android:textColor="#ECF6FC"
+                    android:textSize="14.5sp"
+                    android:textStyle="bold" />
+
+                <FrameLayout
+                    android:layout_width="16dp"
+                    android:layout_height="16dp"
+                    android:layout_marginStart="6dp">
+
+                    <ProgressBar
+                        android:id="@+id/sw_eq_avd"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:indeterminate="true"
+                        android:indeterminateDrawable="@drawable/sonea_w_eq_avd"
+                        android:visibility="gone" />
+
+                    <ViewFlipper
+                        android:id="@+id/sw_eq_flipper"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:autoStart="true"
+                        android:flipInterval="240"
+                        android:visibility="gone">
+
+                        <ImageView
+                            android:id="@+id/sw_eq_f0"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:contentDescription="@null"
+                            android:src="@drawable/sonea_w_eq_f0" />
+
+                        <ImageView
+                            android:id="@+id/sw_eq_f1"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:contentDescription="@null"
+                            android:src="@drawable/sonea_w_eq_f1" />
+
+                        <ImageView
+                            android:id="@+id/sw_eq_f2"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:contentDescription="@null"
+                            android:src="@drawable/sonea_w_eq_f2" />
+
+                        <ImageView
+                            android:id="@+id/sw_eq_f3"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:contentDescription="@null"
+                            android:src="@drawable/sonea_w_eq_f3" />
+                    </ViewFlipper>
+
+                    <ImageView
+                        android:id="@+id/sw_eq_static"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:contentDescription="@null"
+                        android:src="@drawable/sonea_w_eq_static" />
+                </FrameLayout>
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/sw_artist"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:text="@string/widget_tap_to_play"
+                android:textColor="#8EA7B8"
+                android:textSize="12sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <ImageButton
+                    android:id="@+id/sw_btn_shuffle"
+                    android:layout_width="34dp"
+                    android:layout_height="34dp"
+                    android:background="@drawable/sonea_w_ripple_circle"
+                    android:contentDescription="@string/widget_cd_shuffle"
+                    android:padding="7dp"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/sonea_w_ic_shuffle" />
+
+                <ImageButton
+                    android:id="@+id/sw_btn_prev"
+                    android:layout_width="36dp"
+                    android:layout_height="36dp"
+                    android:layout_marginStart="4dp"
+                    android:background="@drawable/sonea_w_ripple_circle"
+                    android:contentDescription="@string/widget_cd_prev"
+                    android:padding="7dp"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/sonea_w_ic_prev" />
+
+                <FrameLayout
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_marginStart="4dp"
+                    android:layout_marginEnd="4dp">
+
+                    <ImageView
+                        android:id="@+id/sw_btn_play_bg"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:contentDescription="@null"
+                        android:src="@drawable/sonea_w_circle_bg" />
+
+                    <ImageButton
+                        android:id="@+id/sw_btn_play"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/sonea_w_ripple_circle"
+                        android:contentDescription="@string/widget_cd_play_pause"
+                        android:padding="8dp"
+                        android:scaleType="fitCenter"
+                        android:src="@drawable/sonea_w_ic_play" />
+                </FrameLayout>
+
+                <ImageButton
+                    android:id="@+id/sw_btn_next"
+                    android:layout_width="36dp"
+                    android:layout_height="36dp"
+                    android:background="@drawable/sonea_w_ripple_circle"
+                    android:contentDescription="@string/widget_cd_next"
+                    android:padding="7dp"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/sonea_w_ic_next" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</FrameLayout>

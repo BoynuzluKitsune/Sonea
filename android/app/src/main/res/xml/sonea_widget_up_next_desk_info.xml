@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<appwidget-provider xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:description="@string/widget_desc_up_next_desk"
+    android:initialLayout="@layout/sonea_widget_up_next_desk"
+    android:minHeight="180dp"
+    android:minResizeHeight="150dp"
+    android:minResizeWidth="220dp"
+    android:minWidth="250dp"
+    android:previewLayout="@layout/sonea_widget_up_next_desk"
+    android:resizeMode="horizontal|vertical"
+    android:targetCellHeight="3"
+    android:targetCellWidth="4"
+    android:updatePeriodMillis="0"
+    android:widgetCategory="home_screen"
+    tools:targetApi="31" />
